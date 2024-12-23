@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спортивный инвентарь</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+        <!-- Видео на фоне -->
+        <video autoplay muted loop id="background-video">
+            <source src="img/water.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+    
+        <!-- Полупрозрачный белый фон поверх видео -->
+        <div class="overlay"></div>
+        
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" width="300" height="300" alt="Логотип">
+            </div>
+            <h1>Плавательный бассейн "Волна"</h1>
+            <p>Мы предлагаем услуги по аренде бассейна и продаже спортивного инвентаря для плавания.</p>
+        </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="products.html">Наши товары</a></li>
+            <li><a href="advantages.html">Наши преимущества</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="test.html">Тест о компании</a></li>
+        </ul>
+    </nav>
+
+    <section id="product-details">
+        <h2>Спортивный инвентарь</h2>
+        <p>Мы предлагаем широкий выбор спортивного инвентаря для плавания: плавки, очки, шапочки, ласты и многое другое. Все товары высокого качества и по доступным ценам.</p>
+        <p><strong>Примеры товаров:</strong></p>
+        <ul>
+            <li>Плавки для взрослых — 1500 руб.</li>
+            <li>Шапочки для плавания — 300 руб.</li>
+            <li>Ласты — 2000 руб.</li>
+        </ul>
+        <img src="img/sportinv.jpg" alt="Спортивный инвентарь" class="product-image">
+    </section>
+
+    <footer>
+        <p class="footer-text hidden">&copy; 2023 Плавательный бассейн "Волна"</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const footerText = document.querySelector('.footer-text');
+            const scrollHeight = document.documentElement.scrollHeight;
+            const clientHeight = document.documentElement.clientHeight;
+            const scrollTop = document.documentElement.scrollTop;
+    
+            // Если пользователь пролистал до конца страницы
+            if (scrollTop + clientHeight >= scrollHeight) {
+                footerText.classList.remove('hidden');
+            } else {
+                footerText.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

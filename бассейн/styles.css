@@ -1,0 +1,614 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url(https://fotocheb.ru/foto/foto.cheb.ru-174592.jpg) center no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.product-category {
+    margin-bottom: 20px;
+}
+
+.product-category h3 {
+    margin-bottom: 10px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+/* Стили для раздела "Важная информация" */
+#important-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+}
+
+#important-info h2 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    border: 2px solid #007BFF;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e6f2ff;
+    margin-bottom: 20px;
+}
+
+.info-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-box ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.info-box ul li {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Стили для блоков "reason-box" */
+.reason-box {
+    border: 2px solid #007BFF;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #e6f2ff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.reason-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Общие стили для выравнивания текста и изображений по центру */
+body {
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+header, section, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание по горизонтали */
+    justify-content: center; /* Выравнивание по вертикали */
+}
+
+img {
+    display: block; /* Чтобы изображения могли быть выровнены */
+    margin: 0 auto; /* Выравнивание изображений по центру */
+}
+
+.reasons, .reason-box, .info-box, .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание по горизонтали */
+    justify-content: center; /* Выравнивание по вертикали */
+}
+
+ul {
+    list-style-position: inside; /* Маркеры списка внутри блока */
+}
+
+/* Общие стили для выравнивания */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+header, section, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание по горизонтали */
+    justify-content: center; /* Выравнивание по вертикали */
+    width: 100%; /* Ширина блоков на всю страницу */
+}
+
+img {
+    display: block; /* Чтобы изображения могли быть выровнены */
+    margin: 0 auto; /* Выравнивание изображений по центру */
+    max-width: 100%; /* Изображения не будут выходить за пределы блока */
+}
+
+/* Стили для блоков "reason-box" */
+.reason-box {
+    border: 2px solid #007BFF;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #e6f2ff;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 80%; /* Ширина блока */
+    max-width: 400px; /* Максимальная ширина блока */
+}
+
+.reason-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Стили для раздела "Важная информация" */
+#important-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    width: 100%; /* Ширина блока */
+}
+
+#important-info h2 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    border: 2px solid #007BFF;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e6f2ff;
+    margin-bottom: 20px;
+    width: 80%; /* Ширина блока */
+    max-width: 600px; /* Максимальная ширина блока */
+}
+
+.info-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-box ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.info-box ul li {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Стили для раздела "Популярные товары" */
+#popular-products {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    width: 100%; /* Ширина блока */
+}
+
+#popular-products h2 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 80%; /* Ширина блока */
+    max-width: 400px; /* Максимальная ширина блока */
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    text-align: center;
+}
+
+.product strong {
+    color: #007BFF;
+}
+
+/* Стили для видео на фоне */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Масштабирует видео, чтобы оно покрывало весь экран */
+    z-index: -1; /* Помещает видео под контент */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+header, section, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание по горизонтали */
+    justify-content: center; /* Выравнивание по вертикали */
+    width: 100%; /* Ширина блоков на всю страницу */
+}
+
+img {
+    display: block; /* Чтобы изображения могли быть выровнены */
+    margin: 0 auto; /* Выравнивание изображений по центру */
+    max-width: 100%; /* Изображения не будут выходить за пределы блока */
+}
+
+/* Стили для блоков "reason-box" */
+.reason-box {
+    border: 2px solid #007BFF;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    margin-bottom: 15px;
+    text-align: center;
+    width: 80%; /* Ширина блока */
+    max-width: 400px; /* Максимальная ширина блока */
+}
+
+.reason-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Стили для раздела "Важная информация" */
+#important-info {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    margin: 20px 0;
+    width: 100%; /* Ширина блока */
+}
+
+#important-info h2 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    border: 2px solid #007BFF;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    margin-bottom: 20px;
+    width: 80%; /* Ширина блока */
+    max-width: 600px; /* Максимальная ширина блока */
+}
+
+.info-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-box ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.info-box ul li {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Стили для раздела "Популярные товары" */
+#popular-products {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    margin: 20px 0;
+    width: 100%; /* Ширина блока */
+}
+
+#popular-products h2 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    width: 80%; /* Ширина блока */
+    max-width: 400px; /* Максимальная ширина блока */
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    text-align: center;
+}
+
+.product strong {
+    color: #007BFF;
+}
+
+/* Стили для видео на фоне */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Масштабирует видео, чтобы оно покрывало весь экран */
+    z-index: -1; /* Помещает видео под контент */
+}
+
+/* Полупрозрачный белый фон поверх видео */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный белый фон */
+    z-index: -1; /* Помещает фон под контент */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+header, section, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание по горизонтали */
+    justify-content: center; /* Выравнивание по вертикали */
+    width: 100%; /* Ширина блоков на всю страницу */
+}
+
+img {
+    display: block; /* Чтобы изображения могли быть выровнены */
+    margin: 0 auto; /* Выравнивание изображений по центру */
+    max-width: 100%; /* Изображения не будут выходить за пределы блока */
+}
+
+/* Стили для блоков "reason-box" */
+.reason-box {
+    border: 2px solid #007BFF;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    margin-bottom: 15px;
+    text-align: center;
+    width: 80%; /* Ширина блока */
+    max-width: 400px; /* Максимальная ширина блока */
+}
+
+.reason-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Стили для раздела "Важная информация" */
+#important-info {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    margin: 20px 0;
+    width: 100%; /* Ширина блока */
+}
+
+#important-info h2 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    border: 2px solid #007BFF;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    margin-bottom: 20px;
+    width: 80%; /* Ширина блока */
+    max-width: 600px; /* Максимальная ширина блока */
+}
+
+.info-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-box ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.info-box ul li {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Стили для раздела "Популярные товары" */
+#popular-products {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    margin: 20px 0;
+    width: 100%; /* Ширина блока */
+}
+
+#popular-products h2 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    width: 80%; /* Ширина блока */
+    max-width: 400px; /* Максимальная ширина блока */
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    text-align: center;
+}
+
+.product strong {
+    color: #007BFF;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Стили для футера */
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон */
+    color: white;
+    text-align: center;
+    padding: 5px 10px; /* Уменьшенный отступ */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px; /* Уменьшенный размер текста */
+    z-index: 1000; /* Убедимся, что футер находится поверх других элементов */
+}
+
+.footer-text {
+    margin: 0;
+    padding: 0;
+}

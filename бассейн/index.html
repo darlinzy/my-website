@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Плавательный бассейн</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Видео на фоне -->
+    <video autoplay muted loop id="background-video">
+        <source src="img/water.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+
+    <!-- Полупрозрачный белый фон поверх видео -->
+    <div class="overlay"></div>
+
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" width="300" height="300" alt="Логотип">
+        </div>
+        <h1>Плавательный бассейн "Волна"</h1>
+        <p>Мы предлагаем услуги по аренде бассейна и продаже спортивного инвентаря для плавания.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="products.html">О продукции</a></li>
+            <li><a href="advantages.html">Наши преимущества</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="test.html">Тест о компании</a></li>
+        </ul>
+    </nav>
+
+    <section id="welcome">
+        <h2><strong>Добро пожаловать на официальный сайт плавательного бассейна "Волна"</strong></h2>
+        <p>Ваше любимое место, чтобы расслабиться. Мы предоставляем широкий и глубокий, как наш бассейн, выбор услуг.</p>
+        
+        <h3><strong>Почему выбирают нас?</strong></h3>
+<div class="reasons">
+    <div class="reason-box">
+        <p>Огромный спектр возможностей для любой аудитории.</p>
+    </div>
+    <div class="reason-box">
+        <p>Доступные цены на многие услуги.</p>
+    </div>
+    <div class="reason-box">
+        <p>Работа без выходных в любое время суток.</p>
+    </div>
+    <div class="reason-box">
+        <p>Удобное расположение.</p>
+    </div>
+</div>
+    </section>
+
+    <section id="important-info">
+        <h2><strong>Важная информация для посетителей</strong></h2>
+        <div class="info-box">
+            <p><strong>Что надо брать с собой в бассейн?</strong></p>
+            <p>Согласно СанПиНам и другим нормативным документам для посещения бассейна необходимо иметь при себе:</p>
+            <ul>
+                <li>Плавательные шапочки должны быть у всех: женщин, мужчин, девочек, мальчиков;</li>
+                <li>Купальники и плавки;</li>
+                <li>Сланцы, которые не используются в качестве повседневной обуви. Они должны быть чистыми. В случае необходимости их можно приобрести на входе в бассейн;</li>
+                <li>Мочалку, мыло или гель для душа, т.к. до того, как войти в воду, надо помыться в душе. Только после этого следует надеть купальник или плавки и выйти в чашу бассейна.</li>
+            </ul>
+            <p>До плавания надо сделать разминку, затем с разрешения инструктора войти в воду, спускаться строго по лесенке, плыть против часовой стрелки, не мешая окружающим.</p>
+            <p>В бассейне 6 дорожек. Первая и шестая дорожки предназначены для тех, кто чувствует себя неуверенно в воде и плавает не очень хорошо. 3-ю и 4-ю дорожку обычно предоставляем тем, кто занимается скоростным плаванием.</p>
+        </div>
+    </section>
+
+    <!-- Раздел "Популярные товары" -->
+    <section id="popular-products">
+        <h2><strong>Популярные товары</strong></h2>
+        <div class="product">
+            <img src="img/kids.jpg" alt="Школьный абонемент">
+            <h3>Школьный абонемент на 30 дней</h3>
+            <p>Абонемент для школьников на 30 дней. Доступ к детскому бассейну и хамаму. Стоимость: 5000 руб.</p>
+            <p><strong>Условия:</strong> Для получения абонемента необходим документ, подтверждающий школьника.</p>
+        </div>
+
+        <div class="product">
+            <img src="img/adult.jpg" alt="Абонемент для пенсионеров">
+            <h3>Абонемент для пенсионеров на 30 дней</h3>
+            <p>Абонемент для пенсионеров на 30 дней. Доступ к взрослому бассейну и хамаму. Стоимость: 4000 руб.</p>
+            <p><strong>Условия:</strong> Для получения абонемента необходим документ, подтверждающий пенсионный возраст.</p>
+        </div>
+
+        <div class="product">
+            <img src="img/hamam.jpg" alt="Абонемент в хамам">
+            <h3>Абонемент в хамам на 30 дней</h3>
+            <p>Абонемент для посещения хамама на 30 дней. Включает 10 посещений. Стоимость: 7000 руб.</p>
+            <p><strong>Условия:</strong> Абонемент действует только для посещения хамама.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-text hidden">&copy; 2023 Плавательный бассейн "Волна"</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const footerText = document.querySelector('.footer-text');
+            const scrollHeight = document.documentElement.scrollHeight;
+            const clientHeight = document.documentElement.clientHeight;
+            const scrollTop = document.documentElement.scrollTop;
+    
+            // Если пользователь пролистал до конца страницы
+            if (scrollTop + clientHeight >= scrollHeight) {
+                footerText.classList.remove('hidden');
+            } else {
+                footerText.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
